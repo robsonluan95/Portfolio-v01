@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+.navList{
+    list-style: none;
+    display: flex;
+}
+.navList li{
+    padding: 15px;
+}

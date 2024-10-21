@@ -1,0 +1,10 @@
+.stylesButton{
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px;
+    transition: 0.3s ease ;
+    border-radius: 2px;
+}
+.stylesButton:hover{
+    transform: scale(1.2);
+}
