@@ -1,5 +1,5 @@
 'use client'
-import styles from "./page.module.css";
+import styles from "./styles.module.css";
 import Footer from "./components/footer/index";
 
 import { useState } from "react";
@@ -9,6 +9,8 @@ import { PiMoonFill } from "react-icons/pi";
 import { ThreeDModel } from "./components/ThreeDModel/ThreeDModel";
 import About from "./components/About";
 import { ButtonCustom } from "./components/buttonCustom";
+import { Service } from "./components/service";
+import { DeveloperAbout } from "./components/developerAbout";
 export default function Home() {
   const [theme,setTheme]=useState("light");
   
@@ -36,12 +38,16 @@ export default function Home() {
 
             
           </div>
-          <div className={styles.animated3d}>
-              <ThreeDModel modelPath='/imac_computer.glb'/>
+          <div className={`${styles.animated3d} ${styles.animated}`}>
+              <ThreeDModel modelPath={`/models/imac_computer.glb`}/>
           </div>
         </section>
         <About/>
-
+        <section className={styles.containerService} >
+          <Service/>
+          <DeveloperAbout/>
+        </section>
+        
         <footer className={styles.footer}>
           <Footer/>
         </footer>

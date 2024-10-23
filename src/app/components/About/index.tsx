@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import icone from '../../../../public/android-chrome-512x512.png'
 import React from 'react'
-import styles from './index.module.css'
+import styles from './styles.module.css'
 import { ButtonCustom } from '../buttonCustom'
 
 const About = () => {

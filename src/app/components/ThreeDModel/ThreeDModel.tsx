@@ -1,11 +1,11 @@
 'use client'
 import { Canvas } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF as useGLT } from "@react-three/drei";
 import { OrbitControls } from '@react-three/drei';
 import { useEffect,useState } from "react";
 
 export const ThreeDModel = ({ modelPath }) => {
-    const { scene } = useGLTF(modelPath); 
+    const { scene } = useGLT(modelPath); 
     const [rotation,setRotation]=useState([0,Math.PI,0])
 
     useEffect(()=>{

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import styles from "./page.module.css"
+import styles from "./styles.module.css"
 import Link from 'next/link'
  
 const Header = () => {
